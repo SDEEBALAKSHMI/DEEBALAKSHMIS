@@ -11,19 +11,24 @@
             margin: 0;
             padding: 0;
         }
+        
         body {
             font-family: 'Lato', sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #f7dc6f; /* Yellow background */
+            transition: background-color 0.5s ease-in-out;
         }
+        
         a {
             text-decoration: none;
             color: #008000; /* Green text */
         }
+        
         a:hover {
             color: #006400; /* Dark green hover */
         }
+        
         /* Header Styles */
         header {
             background-color: #1f1f42; /* Blue background */
@@ -33,16 +38,19 @@
             position: relative;
             animation: fadeIn 2s;
         }
+        
         .header-content {
             max-width: 800px;
             margin: 0 auto;
             padding: 0 20px;
         }
+        
         .header-content h1 {
             font-size: 2.5rem;
             color: #008000; /* Green text */
             animation: zoomIn 2s;
         }
+        
         .profile-picture {
             width: 100px;
             height: 100px;
@@ -54,9 +62,11 @@
             transition: transform 0.3s ease-in-out;
             animation: fadeIn 2s;
         }
+        
         .profile-picture:hover {
             transform: scale(1.1);
         }
+        
         /* Nav Styles */
         nav {
             background-color: #008000; /* Green background */
@@ -65,6 +75,7 @@
             padding: 1rem 0;
             animation: fadeIn 2s;
         }
+        
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -72,16 +83,20 @@
             display: flex;
             justify-content: space-between;
         }
+        
         nav ul li {
             margin: 0 20px;
         }
+        
         nav ul li a {
             color: #fff;
             transition: color 0.3s ease-in-out;
         }
+        
         nav ul li a:hover {
             color: #ccc;
         }
+        
         /* Section Styles */
         .section-content {
             background-color: #ffffcc;
@@ -91,67 +106,129 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: justify;
             animation: fadeIn 2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+        
         .section-content h2 {
             margin-top: 0;
             color: #008000; /* Green text */
         }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             .header-content {
                 padding: 0 10px;
             }
+            
             .profile-picture {
                 width: 80px;
                 height: 80px;
                 top: 50px;
                 left: 50px;
             }
+            
             nav ul {
                 flex-direction: column;
             }
+            
             nav ul li {
                 margin: 10px 0;
             }
         }
+        
         @media (max-width: 480px) {
             .section-content {
                 padding: 1rem;
                 margin: 0.5rem;
             }
         }
+        
         /* Animations */
         @keyframes fadeIn {
             0% {
                 opacity: 0;
             }
+            
             100% {
                 opacity: 1;
             }
         }
+        
         @keyframes zoomIn {
             0% {
                 transform: scale(0.5);
             }
+            
             100% {
                 transform: scale(1);
             }
         }
-    </style>
+        
+        /* Flexbox */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .flex-item {
+            width: 200px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+   /* Linear Gradient */
+    .linear-gradient {
+        background-image: linear-gradient(to bottom, #f1f1f1, #ccc);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Transition */
+    .transition {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.5s ease-in-out;
+    }
+    
+    .transition:hover {
+        background-color: #3e8e41;
+    }
+    
+    /* Media Query */
+    @media (max-width: 600px) {
+        .media-query {
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+    }
+</style>
+```
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="./pic.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1 class="animate__animated animate__zoomIn">S.DEEBALAKSHMI</h1>
-            <p class="animate__animated animate__fadeIn">Assistant Professor | Software Professional</p>
-            <ul class="contact-info">
-                
-<a href="mailto:deebalakshmis@annaadarsh.edu.in" class="animate__animated animate__fadeInLeft">deebalakshmis@annaadarsh.edu.in</a><br>
-<a href="mailto:deebalakshmi@gmail.com" class="animate__animated animate__fadeInRight">deebalakshmi@gmail.com</a><br>
-<a href="tel:+919551228509" class="animate__animated animate__fadeInLeft">+91 95512 28509</a>
+<header>
+<div class="header-content">
+<!-- Add your profile picture here -->
+<img src="./pic.jpg" alt="Your Profile Picture" class="profile-picture">
+<h1 class="animate__animated animate__zoomIn">S.DEEBALAKSHMI</h1>
+<p class="animate__animated animate__fadeIn">Assistant Professor | Software Professional</p>
+<ul class="contact-info">
+<a href="mailto:deebalakshmis@annaadarsh.edu.in" class="animate__animated animate__fadeInLeft">deebalakshmis@annaadarsh.edu.in</a>
 
+<a href="mailto:deebalakshmi@gmail.com" class="animate__animated animate__fadeInRight">deebalakshmi@gmail.com</a>
+
+<a href="tel:+919551228509" class="animate__animated animate__fadeInLeft">+91 95512 28509</a>
 </ul>
 </div>
 </header>
@@ -192,6 +269,7 @@
 </ul>
 </div>
 </section>
+
 <section id="professional-experience">
 <div class="section-content">
 <h2 class="animate__animated animate__slideInLeft">Professional Experience</h2>
@@ -206,6 +284,7 @@
 </ul>
 </div>
 </section>
+
 <section id="achievements">
 <div class="section-content">
 <h2 class="animate__animated animate__zoomIn">Achievements</h2>
@@ -215,9 +294,13 @@
 </ul>
 </div>
 </section>
+
 <footer>
 <p class="animate__animated animate__fadeIn">&copy; 2025 S.DEEBALAKSHMI</p>
 </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
 </body>
 </html>
+
+         
