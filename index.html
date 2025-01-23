@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.DEEBALAKSHMI - Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f7dc6f; /* Yellow background */
+        }
+        a {
+            text-decoration: none;
+            color: #008000; /* Green text */
+        }
+        a:hover {
+            color: #006400; /* Dark green hover */
+        }
+        /* Header Styles */
+        header {
+            background-color: #1f1f42; /* Blue background */
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header-content h1 {
+            font-size: 2.5rem;
+            color: #008000; /* Green text */
+            animation: zoomIn 2s;
+        }
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 75px;
+            left: 75px;
+            transition: transform 0.3s ease-in-out;
+            animation: fadeIn 2s;
+        }
+        .profile-picture:hover {
+            transform: scale(1.1);
+        }
+        /* Nav Styles */
+        nav {
+            background-color: #008000; /* Green background */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            animation: fadeIn 2s;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #ccc;
+        }
+        /* Section Styles */
+        .section-content {
+            background-color: #ffffcc;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            animation: fadeIn 2s;
+        }
+        .section-content h2 {
+            margin-top: 0;
+            color: #008000; /* Green text */
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                padding: 0 10px;
+            }
+            .profile-picture {
+                width: 80px;
+                height: 80px;
+                top: 50px;
+                left: 50px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            .section-content {
+                padding: 1rem;
+                margin: 0.5rem;
+            }
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="./pic.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1 class="animate__animated animate__zoomIn">S.DEEBALAKSHMI</h1>
+            <p class="animate__animated animate__fadeIn">Assistant Professor | Software Professional</p>
+            <ul class="contact-info">
+                
+<a href="mailto:deebalakshmis@annaadarsh.edu.in" class="animate__animated animate__fadeInLeft">deebalakshmis@annaadarsh.edu.in</a><br>
+<a href="mailto:deebalakshmi@gmail.com" class="animate__animated animate__fadeInRight">deebalakshmi@gmail.com</a><br>
+<a href="tel:+919551228509" class="animate__animated animate__fadeInLeft">+91 95512 28509</a>
+
+</ul>
+</div>
+</header>
+<nav>
+<ul>
+<li><a href="#about" class="animate__animated animate__fadeIn">About</a></li>
+<li><a href="#education" class="animate__animated animate__fadeIn">Education</a></li>
+<li><a href="#technical-proficiencies" class="animate__animated animate__fadeIn">Technical Proficiencies</a></li>
+<li><a href="#professional-experience" class="animate__animated animate__fadeIn">Professional Experience</a></li>
+<li><a href="#achievements" class="animate__animated animate__fadeIn">Achievements</a></li>
+</ul>
+</nav>
+<section id="about">
+<div class="section-content">
+<h2 class="animate__animated animate__zoomIn">About Me</h2>
+<p class="animate__animated animate__fadeIn">As a visionary educator and seasoned software professional, I bring over 9 years of distinguished teaching experience and 4 years of expertise in software development, fostering a unique blend of academic and industry proficiency.</p>
+</div>
+</section>
+<section id="education">
+<div class="section-content">
+<h2 class="animate__animated animate__flipInX">Education</h2>
+<ul>
+<li class="animate__animated animate__fadeInLeft">Master of Computer Applications (MCA), Anna University</li>
+<li class="animate__animated animate__fadeInRight">UGC-NET Qualified (First Appearance) with JRF </li>
+<li class="animate__animated animate__fadeInLeft">Aptech Certified Computer Professional, Advance Diploma in Software Engineering, Aptech Private Limited, Chennai (1999-2002)</li>
+<li class="animate__animated animate__fadeInRight">Higher Secondary Education, M.G.R. Adarsh Matriculation Higher Secondary School, Chennai (1999)</li>
+</ul>
+</div>
+</section>
+<section id="technical-proficiencies">
+<div class="section-content">
+<h2 class="animate__animated animate__rotateIn">Technical Proficiencies</h2>
+<ul>
+<li class="animate__animated animate__fadeIn">Programming Languages: Python, C, C++, C#, Java, J2EE, .NET, JSF, Spring, Hibernate, R Programming</li>
+<li class="animate__animated animate__fadeIn">Operating Systems: Windows, UNIX, Linux</li>
+<li class="animate__animated animate__fadeIn">Internet Technologies: HTML, UML, XML</li>
+<li class="animate__animated animate__fadeIn">Script Languages: JavaScript, VBScript, Perl</li>
+</ul>
+</div>
+</section>
+<section id="professional-experience">
+<div class="section-content">
+<h2 class="animate__animated animate__slideInLeft">Professional Experience</h2>
+<h3 class="animate__animated animate__fadeIn">Academic Experience</h3>
+<ul>
+<li class="animate__animated animate__fadeInLeft">Assistant Professor, 9 YEARS Experience</li>
+</ul>
+<h3 class="animate__animated animate__fadeIn">Industry Experience</h3>
+<ul>
+<li class="animate__animated animate__fadeInLeft">Senior Software Engineer & Project Coordinator, SRM Learning Tree (2011-2013)</li>
+<li class="animate__animated animate__fadeInRight">Software Engineer, Sofgen India Pvt Ltd, Chennai (2005-2007)</li>
+</ul>
+</div>
+</section>
+<section id="achievements">
+<div class="section-content">
+<h2 class="animate__animated animate__zoomIn">Achievements</h2>
+<ul>
+<li class="animate__animated animate__fadeInLeft">Won first prize in Paper Presentations</li>
+<li class="animate__animated animate__fadeInRight">Active Participant in Faculty Development Programs (FDP), Seminars, and Conferences</li>
+</ul>
+</div>
+</section>
+<footer>
+<p class="animate__animated animate__fadeIn">&copy; 2025 S.DEEBALAKSHMI</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+</body>
+</html>
