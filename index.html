@@ -31,9 +31,9 @@
         
         /* Header Styles */
         header {
-            background-color: #1f1f42; /* Blue background */
+            background: linear-gradient(to bottom, #1f1f42, #3f3f69); /* Blue background with gradient */
             color: #fff;
-            text-align: center;
+            text-align: left;
             padding: 2rem 0;
             position: relative;
             animation: fadeIn 2s;
@@ -69,9 +69,9 @@
         
         /* Nav Styles */
         nav {
-            background-color: #008000; /* Green background */
+            background: linear-gradient(to bottom, #008000, #34c759); /* Green background with gradient */
             color: #fff;
-            text-align: center;
+            text-align: left;
             padding: 1rem 0;
             animation: fadeIn 2s;
         }
@@ -81,7 +81,7 @@
             padding: 0;
             margin: 0;
             display: flex;
-            justify-content: space-between;
+            justify-content: left;
         }
         
         nav ul li {
@@ -99,21 +99,37 @@
         
         /* Section Styles */
         .section-content {
-            background-color: #ffffcc;
+            background: linear-gradient(to bottom, #ffffcc, #cce5ff); /* Gradient background */
             padding: 2rem;
             margin: 1rem;
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
+            text-align: left;
             animation: fadeIn 2s;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: left;
         }
         
         .section-content h2 {
             margin-top: 0;
             color: #008000; /* Green text */
+        }
+        
+        /* Table Styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f0f0f0;
         }
         
         /* Responsive Design */
@@ -156,7 +172,7 @@
             }
         }
         
-        @keyframes zoomIn {
+         @keyframes zoomIn {
             0% {
                 transform: scale(0.5);
             }
@@ -170,7 +186,7 @@
         .flex-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: left;
         }
         
         .flex-item {
@@ -181,126 +197,185 @@
             border: 1px solid #ddd;
             border-radius: 10px;
         }
-   /* Linear Gradient */
-    .linear-gradient {
-        background-image: linear-gradient(to bottom, #f1f1f1, #ccc);
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    /* Transition */
-    .transition {
-        background-color: #4CAF50;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.5s ease-in-out;
-    }
-    
-    .transition:hover {
-        background-color: #3e8e41;
-    }
-    
-    /* Media Query */
-    @media (max-width: 600px) {
-        .media-query {
-            background-color: #ccc;
-            padding: 20px;
-            text-align: center;
+        
+        /* Linear Gradient */
+        .linear-gradient {
+            background-image: linear-gradient(to bottom, #f1f1f1, #ccc);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-    }
-</style>
-```
+        
+        /* Transition */
+        .transition {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s ease-in-out;
+        }
+        
+        .transition:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* Media Query */
+        @media (max-width: 600px) {
+            .media-query {
+                background-color: #ccc;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-<header>
-<div class="header-content">
-<!-- Add your profile picture here -->
-<img src="./IMG-20200613-WA0021.jpg" alt="Your Profile Picture" class="profile-picture">
-<h1 class="animate__animated animate__zoomIn">S.DEEBALAKSHMI</h1>
-<p class="animate__animated animate__fadeIn">Assistant Professor | Software Professional</p>
-<ul class="contact-info">
-<a href="mailto:deebalakshmis@annaadarsh.edu.in" class="animate__animated animate__fadeInLeft">deebalakshmis@annaadarsh.edu.in</a>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="./IMG-20200613-WA0021.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1 class="animate__animated animate__zoomIn">S.DEEBALAKSHMI</h1>
+            <p class="animate__animated animate__fadeIn">Assistant Professor | Software Professional</p>
+            <ul class="contact-info">
+                <li><a href="mailto:deebalakshmis@annaadarsh.edu.in" class="animate__animated animate__fadeInLeft">deebalakshmis@annaadarsh.edu.in</a></li>
+                <li><a href="mailto:deebalakshmi@gmail.com" class="animate__animated animate__fadeInRight">deebalakshmi@gmail.com</a></li>
+                <li><a href="tel:+919551228509" class="animate__animated animate__fadeInLeft">+91 95512 28509</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about" class="animate__animated animate__fadeIn">About</a></li>
+            <li><a href="#education" class="animate__animated animate__fadeIn">Education</a></li>
+            <li><a href="#technical-proficiencies" class="animate__animated animate__fadeIn">Technical Proficiencies</a></li>
+            <li><a href="#professional-experience" class="animate__animated animate__fadeIn">Professional Experience</a></li>
+            <li><a href="#achievements" class="animate__animated animate__fadeIn">Achievements</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <div class="section-content">
+            <h2 class="animate__animated animate__zoomIn">About Me</h2>
+            <table>
+                <tr>
+                    <th>About Me</th>
+                    <td>As a visionary educator and seasoned software professional, I bring over 9 years of distinguished teaching experience and 4 years of expertise in software development, fostering a unique blend of academic and industry proficiency.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="education">
+        <div class="section-content">
+            <h2 class="animate__animated animate__flipInX">Education</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Master of Computer Applications (MCA)</td>
+                    <td>Anna University</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>UGC-NET Qualified (First Appearance) with JRF</td>
+                    <td>UGC</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>Aptech Certified Computer Professional, Advance Diploma in Software Engineering</td>
+                    <td>Aptech Private Limited
 
-<a href="mailto:deebalakshmi@gmail.com" class="animate__animated animate__fadeInRight">deebalakshmi@gmail.com</a>
 
-<a href="tel:+919551228509" class="animate__animated animate__fadeInLeft">+91 95512 28509</a>
-</ul>
-</div>
-</header>
-<nav>
-<ul>
-<li><a href="#about" class="animate__animated animate__fadeIn">About</a></li>
-<li><a href="#education" class="animate__animated animate__fadeIn">Education</a></li>
-<li><a href="#technical-proficiencies" class="animate__animated animate__fadeIn">Technical Proficiencies</a></li>
-<li><a href="#professional-experience" class="animate__animated animate__fadeIn">Professional Experience</a></li>
-<li><a href="#achievements" class="animate__animated animate__fadeIn">Achievements</a></li>
-</ul>
-</nav>
-<section id="about">
-<div class="section-content">
-<h2 class="animate__animated animate__zoomIn">About Me</h2>
-<p class="animate__animated animate__fadeIn">As a visionary educator and seasoned software professional, I bring over 9 years of distinguished teaching experience and 4 years of expertise in software development, fostering a unique blend of academic and industry proficiency.</p>
-</div>
-</section>
-<section id="education">
-<div class="section-content">
-<h2 class="animate__animated animate__flipInX">Education</h2>
-<ul>
-<li class="animate__animated animate__fadeInLeft">Master of Computer Applications (MCA), Anna University</li>
-<li class="animate__animated animate__fadeInRight">UGC-NET Qualified (First Appearance) with JRF </li>
-<li class="animate__animated animate__fadeInLeft">Aptech Certified Computer Professional, Advance Diploma in Software Engineering, Aptech Private Limited, Chennai</li>
-<li class="animate__animated animate__fadeInRight">Higher Secondary Education, M.G.R. Adarsh Matriculation Higher Secondary School, Chennai </li>
-</ul>
-</div>
-</section>
-<section id="technical-proficiencies">
-<div class="section-content">
-<h2 class="animate__animated animate__rotateIn">Technical Proficiencies</h2>
-<ul>
-<li class="animate__animated animate__fadeIn">Programming Languages: Python, C, C++, C#, Java, J2EE, .NET, JSF, Spring, Hibernate, R Programming</li>
-<li class="animate__animated animate__fadeIn">Operating Systems: Windows, UNIX, Linux</li>
-<li class="animate__animated animate__fadeIn">Internet Technologies: HTML, UML, XML</li>
-<li class="animate__animated animate__fadeIn">Script Languages: JavaScript, VBScript, Perl</li>
-</ul>
-</div>
-</section>
-
-<section id="professional-experience">
-<div class="section-content">
-<h2 class="animate__animated animate__slideInLeft">Professional Experience</h2>
-<h3 class="animate__animated animate__fadeIn">Academic Experience</h3>
-<ul>
-<li class="animate__animated animate__fadeInLeft">Assistant Professor, 9 YEARS Experience</li>
-</ul>
-<h3 class="animate__animated animate__fadeIn">Industry Experience</h3>
-<ul>
-<li class="animate__animated animate__fadeInLeft">Senior Software Engineer & Project Coordinator, SRM Learning Tree)</li>
-<li class="animate__animated animate__fadeInRight">Software Engineer, Sofgen India Pvt Ltd, Chennai</li>
-</ul>
-</div>
-</section>
-
-<section id="achievements">
-<div class="section-content">
-<h2 class="animate__animated animate__zoomIn">Achievements</h2>
-<ul>
-<li class="animate__animated animate__fadeInLeft">Won first prize in Paper Presentations</li>
-<li class="animate__animated animate__fadeInRight">Active Participant in Faculty Development Programs (FDP), Seminars, and Conferences</li>
-</ul>
-</div>
-</section>
-
-<footer>
-<p class="animate__animated animate__fadeIn">&copy; 2025 S.DEEBALAKSHMI</p>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+                </tr>
+                <tr>
+                    <td>Higher Secondary Education</td>
+                    <td>M.G.R. Adarsh Matriculation Higher Secondary School, Chennai</td>
+                    <td>2005</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="technical-proficiencies">
+        <div class="section-content">
+            <h2 class="animate__animated animate__rotateIn">Technical Proficiencies</h2>
+            <table>
+                <tr>
+                    <th>Technical Skills</th>
+                </tr>
+                <tr>
+                    <td>Programming Languages: Python, C, C++, C#, Java, J2EE, .NET, JSF, Spring, Hibernate, R Programming</td>
+                </tr>
+                <tr>
+                    <td>Operating Systems: Windows, UNIX, Linux</td>
+                </tr>
+                <tr>
+                    <td>Internet Technologies: HTML, UML, XML</td>
+                </tr>
+                <tr>
+                    <td>Script Languages: JavaScript, VBScript, Perl</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="professional-experience">
+        <div class="section-content">
+            <h2 class="animate__animated animate__slideInLeft">Professional Experience</h2>
+            <h3 class="animate__animated animate__fadeIn">Academic Experience</h3>
+            <table>
+                <tr>
+                    <th>Designation</th>
+                    <th>Institution</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Assistant Professor</td>
+                    <td>Anna Adarsh College for Women</td>
+                    <td>9 Years</td>
+                </tr>
+            </table>
+            <h3 class="animate__animated animate__fadeIn">Industry Experience</h3>
+            <table>
+                <tr>
+                    <th>Designation</th>
+                    <th>Company</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Senior Software Engineer & Project Coordinator</td>
+                    <td>SRM Learning Tree</td>
+                    <td>4 Years</td>
+                </tr>
+                <tr>
+                    <td>Software Engineer</td>
+                    <td>Sofgen India Pvt Ltd, Chennai</td>
+                    <td>2 Years</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="achievements">
+        <div class="section-content">
+            <h2 class="animate__animated animate__zoomIn">Achievements</h2>
+            <table>
+                <tr>
+                    <th>Achievements</th>
+                </tr>
+                <tr>
+                    <td>Won first prize in Paper Presentations</td>
+                </tr>
+                <tr>
+                    <td>Active Participant in Faculty Development Programs (FDP), Seminars, and Conferences</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p class="animate__animated animate__fadeIn">&copy; 2025 S.DEEBALAKSHMI</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
 </body>
 </html>
-
-         
